@@ -45,8 +45,6 @@ type Order @entity {
   expirationTime: BigInt
   trackingCode: Bytes
   owner: String
-  commitmentTime: BigInt
-  expectedPriceTime: BigInt
 
   fillPrice: BigInt
   accountPnlRealized: BigInt
@@ -151,7 +149,7 @@ type PreviousOrderExpired @entity {
   accountId: BigInt!
   sizeDelta: BigInt!
   acceptablePrice: BigInt!
-  settlementTime: BigInt!
+  commitmentTime: BigInt!
   trackingCode: Bytes!
 }
 

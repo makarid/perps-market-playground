@@ -2031,8 +2031,8 @@ export class PreviousOrderExpired extends Entity {
     this.set("acceptablePrice", Value.fromBigInt(value));
   }
 
-  get settlementTime(): BigInt {
-    let value = this.get("settlementTime");
+  get commitmentTime(): BigInt {
+    let value = this.get("commitmentTime");
     if (!value || value.kind == ValueKind.NULL) {
       throw new Error("Cannot return null for a required field.");
     } else {
@@ -2040,8 +2040,8 @@ export class PreviousOrderExpired extends Entity {
     }
   }
 
-  set settlementTime(value: BigInt) {
-    this.set("settlementTime", Value.fromBigInt(value));
+  set commitmentTime(value: BigInt) {
+    this.set("commitmentTime", Value.fromBigInt(value));
   }
 
   get trackingCode(): Bytes {
