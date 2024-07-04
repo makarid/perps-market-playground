@@ -34,7 +34,7 @@ codegen() {
 # releaseVersion=$(yarn workspace '@synthetixio/perps-market' node -p 'require(`./package.json`).version')
 releaseVersion="latest"
 
-#codegen base-sepolia-andromeda 84532 "synthetix-omnibus:$releaseVersion" andromeda
+codegen arbitrum-mainnet 42161 "synthetix-omnibus:$releaseVersion" main
 codegen base-mainnet-andromeda 8453 "synthetix-omnibus:$releaseVersion" andromeda
 
 #codegen mainnet 1 "synthetix-omnibus:$releaseVersion" main

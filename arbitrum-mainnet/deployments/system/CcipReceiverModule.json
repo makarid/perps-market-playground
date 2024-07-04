@@ -1,0 +1,103 @@
+{
+  "address": "0xb6522425C020770afBE31b7370Ef3d296B5E9B63",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "InvalidMessage",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "NotCcipRouter",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "Unauthorized",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "name": "UnsupportedNetwork",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "messageId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint64",
+              "name": "sourceChainSelector",
+              "type": "uint64"
+            },
+            {
+              "internalType": "bytes",
+              "name": "sender",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "token",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct CcipClient.EVMTokenAmount[]",
+              "name": "tokenAmounts",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct CcipClient.Any2EVMMessage",
+          "name": "message",
+          "type": "tuple"
+        }
+      ],
+      "name": "ccipReceive",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "constructorArgs": [],
+  "linkedLibraries": {},
+  "deployTxnHash": "0xe3527365f2c44428458025d2f17426a9f3a7a1a51236e51a1d415ccf22af8eac",
+  "sourceName": "contracts/modules/core/CcipReceiverModule.sol",
+  "contractName": "CcipReceiverModule",
+  "deployedOn": "contract.CcipReceiverModule",
+  "gasUsed": 901118,
+  "gasCost": "10000000"
+}
